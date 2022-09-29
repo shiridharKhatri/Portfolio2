@@ -1,0 +1,1306 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Combo&family=Concert+One&family=Dancing+Script&family=DynaPuff:wght@400;500&family=Lexend:wght@500&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100&family=Qwitcher+Grypen&family=Roboto:ital,wght@1,100&family=Rubik:wght@300&family=Silkscreen&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend", sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+section,
+footer {
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
+}
+
+body {
+  background-color: black;
+}
+
+//color codes section//
+$bg-color: #fada5e;
+
+// This is for navigation bar
+nav {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 2;
+
+  h2 {
+    font-size: 40px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: white;
+    span {
+      color: $bg-color;
+      font-family: "Dancing Script", cursive;
+    }
+  }
+  input {
+    display: none;
+  }
+  label {
+    display: none;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    float: right;
+    padding-right: 40px;
+
+    li {
+      margin: 30px 90px 0 0;
+      :hover {
+        color: $bg-color;
+        transition: 0.3s ease;
+        border-bottom: 2px solid $bg-color;
+        font-size: 30px;
+      }
+      a {
+        font-size: 25px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.scroll-img {
+  img {
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    float: right;
+    top: 85%;
+    left: 93%;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+    animation: scrollTop 0.8s ease infinite;
+
+    @keyframes scrollTop {
+      0% {
+        height: 50px;
+      }
+      100% {
+        height: 52px;
+      }
+    }
+  }
+}
+//This is container1//
+.container1 {
+  background-color: black;
+  height: 700px;
+  width: 100%;
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  .description {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 40px;
+      span {
+        color: $bg-color;
+      }
+    }
+    .btn {
+      // -webkit-box-reflect: below 0 linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+      width: 50%;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .form1 {
+        width: 45%;
+        .btn1 {
+          width: 100%;
+          height: 45px;
+          margin-right: 10px;
+          background-color: transparent;
+          font-size: 18px;
+          cursor: pointer;
+          border: 2px solid $bg-color;
+          border-radius: 5px 0 0 5px;
+          transition: 0.4s ease;
+          &:hover {
+            background-color: $bg-color;
+            color: black;
+            font-weight: bold;
+            border: none;
+          }
+        }
+      }
+      form {
+        width: 45%;
+        .btn2 {
+          width: 100%;
+          height: 45px;
+          margin: 5px;
+          background-color: $bg-color;
+          font-size: 18px;
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+          border: none;
+          border-radius: 0 5px 5px 0;
+          transition: 0.4s ease;
+          &:hover {
+            border: 2px solid $bg-color;
+            color: white;
+            font-weight: bold;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  .image {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+//Container2//
+.container2 {
+  // background-color: aliceblue;
+  height: 500px;
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card1 {
+    background-color: #1c1c1c;
+    height: 250px;
+    width: 330px;
+    margin-right: 10px;
+    border-radius: 10px;
+    img {
+      position: relative;
+      left: 5%;
+      top: 20px;
+    }
+    p {
+      font-size: 20px;
+      padding: 20px;
+      height: 100px;
+      position: relative;
+      top: 5%;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 10%;
+      button {
+        width: 85%;
+        background-color: $bg-color;
+        color: black;
+        font-weight: bold;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        // border: 2px solid #ae0152;
+        &:hover {
+          background-color: transparent;
+          border: 2px solid $bg-color;
+          color: white;
+          font-weight: bold;
+          transition: 0.4s ease;
+        }
+      }
+    }
+  }
+  .card2 {
+    background-color: #1c1c1c;
+    height: 250px;
+    width: 330px;
+    border-radius: 10px;
+    img {
+      position: relative;
+      left: 5%;
+      top: 20px;
+    }
+    p {
+      font-size: 20px;
+      padding: 20px;
+      height: 100px;
+      position: relative;
+      top: 5%;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 10%;
+      button {
+        width: 85%;
+        background-color: $bg-color;
+        height: 50px;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        // border: 2px solid #ae0152;
+      }
+      :hover {
+        background-color: transparent;
+        border: 2px solid $bg-color;
+        color: white;
+        font-weight: bold;
+        transition: 0.4s ease;
+      }
+    }
+  }
+  .card3 {
+    background-color: #1c1c1c;
+    height: 250px;
+    width: 330px;
+    margin-left: 10px;
+    border-radius: 10px;
+
+    img {
+      position: relative;
+      left: 3%;
+      top: 20px;
+    }
+    p {
+      font-size: 20px;
+      padding: 20px;
+      height: 100px;
+      position: relative;
+      top: 5%;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: 10%;
+      button {
+        width: 85%;
+        background-color: $bg-color;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        // border: 2px solid #ae0152;
+      }
+      :hover {
+        background-color: transparent;
+        border: 2px solid $bg-color;
+        color: white;
+        font-weight: bold;
+        transition: 0.4s ease;
+      }
+    }
+  }
+}
+
+//Container3//
+.container3 {
+  background-color: transparent;
+  height: 800px;
+  width: 100%;
+
+  h1 {
+    font-size: 30px;
+    padding-left: 20px;
+    position: relative;
+    left: 10%;
+    top: 10%;
+    border-left: 10px solid $bg-color;
+  }
+  .grid-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    //  grid-gap: 10px;
+    background-color: transparent;
+    height: 50%;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    .item1 {
+      background-color: $bg-color;
+      height: 60%;
+      border-radius: 20px;
+      width: 80%;
+      position: relative;
+      top: 10%;
+      img {
+        position: relative;
+        float: right;
+        border: 7px solid black;
+        top: 15%;
+        left: 12%;
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+      }
+      h2 {
+        position: relative;
+        top: 25%;
+        left: 10%;
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+    .item2 {
+      background-color: $bg-color;
+      height: 60%;
+      border-radius: 20px;
+      width: 80%;
+      position: relative;
+      top: 10%;
+      img {
+        position: relative;
+        float: right;
+        border: 7px solid black;
+        top: 15%;
+        left: 12%;
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+      }
+      h2 {
+        position: relative;
+        top: 25%;
+        left: 10%;
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+    .item3 {
+      background-color: $bg-color;
+      height: 60%;
+      border-radius: 20px;
+      width: 80%;
+      position: relative;
+      top: 10%;
+      img {
+        position: relative;
+        float: right;
+        border: 7px solid black;
+        top: 15%;
+        left: 12%;
+        width: 100%;
+        height: 250px;
+        border-radius: 20px;
+      }
+      h2 {
+        position: relative;
+        top: 25%;
+        left: 10%;
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+  }
+
+  p {
+    width: 80%;
+    padding-left: 20px;
+    font-size: 20px;
+    position: relative;
+    text-align: left;
+    border-left: 10px solid $bg-color;
+    left: 10%;
+    top: 25%;
+  }
+}
+
+//container-4
+.container4 {
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url("earth.jpg");
+  border-radius: 0 0 20px 20px;
+  .email-card {
+    background-color: rgba(244, 244, 244, 0.2);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(244, 244, 244, 0.3);
+    color: white;
+    display: flex;
+    border-radius: 20px;
+    height: 90%;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 3%;
+
+    form {
+      background-color: transparent;
+      width: 50%;
+      height: 100%;
+
+      h1 {
+        background-color: transparent;
+        font-weight: 400;
+        position: relative;
+        top: 7%;
+        left: 5%;
+        margin-bottom: 20px;
+        width: 90%;
+        font-family: "Lexend", sans-serif;
+      }
+      input {
+        padding: 10px;
+        position: relative;
+        left: 5%;
+        top: 5%;
+        width: 90%;
+        outline: none;
+        border: 2px solid rgba(244, 244, 244, 0.3);
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: transparent;
+        font-family: "Lexend", sans-serif;
+        &:hover {
+          background-color: #dfe3ee;
+          color: black;
+          transition: 0.3s ease;
+          font-weight: bold;
+        }
+      }
+      textarea {
+        position: relative;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 15%;
+        outline: none;
+        padding: 10px;
+        border: 2px solid rgba(244, 244, 244, 0.3);
+        border-radius: 5px;
+        background-color: transparent;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Lexend", sans-serif;
+        &:hover {
+          background-color: #dfe3ee;
+          color: black;
+          transition: 0.3s ease;
+          font-weight: bold;
+        }
+      }
+      button {
+        position: relative;
+        left: 5%;
+        top: 7%;
+        height: 10%;
+        padding: 10px;
+        width: 90%;
+        border-radius: 5px;
+        border: 2px solid rgba(244, 244, 244, 0.3);
+        background-color: white;
+        color: #445;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          background-color: transparent;
+          color: white;
+          transition: 0.3s ease;
+          font-weight: bold;
+        }
+      }
+    }
+    .more-info {
+      width: 50%;
+      height: 100%;
+
+      h1 {
+        width: 90%;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: "Lexend", sans-serif;
+        position: relative;
+        left: 5%;
+        top: 7%;
+      }
+      h3 {
+        width: 90%;
+        position: relative;
+        left: 5%;
+        top: 7%;
+        font-family: "Lexend", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      img {
+        position: relative;
+        float: right;
+        top: 17.5%;
+        height: 300px;
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+//Footer//
+footer {
+  background-color: $bg-color;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+  }
+}
+::selection {
+  background-color: $bg-color;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    height: 80px;
+    // background-color: red;
+
+    h2 {
+      top: 10px;
+    }
+    label {
+      position: absolute;
+      left: 87%;
+      top: 30%;
+      display: block;
+
+      i {
+        color: $bg-color;
+        font-size: 40px;
+      }
+    }
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $bg-color;
+      position: relative;
+      right: -70%;
+      top: 100%;
+      width: 70%;
+      height: 550px;
+      border-radius: 20px 0 0 20px;
+      transition: 0.4s ease-out;
+      li {
+        margin: 30px 0px 40px 40px;
+
+        a {
+          color: black;
+
+          &:hover {
+            color: #445;
+            border-color: #445;
+          }
+        }
+      }
+    }
+    #checkBox:checked ~ ul {
+      transition: 0.4s ease;
+      right: 0%;
+    }
+    #checkBox:checked ~ label i::before {
+      content: "\f00d";
+    }
+  }
+  .container1 {
+    height: 700px;
+    .description {
+      height: 700px;
+    }
+    .image {
+      height: 700px;
+      img {
+        height: 400px;
+      }
+    }
+  }
+  .container3 {
+    .grid-display {
+      .item1 {
+        height: 50%;
+        img {
+          width: 100%;
+          height: 200px;
+        }
+        h2 {
+          font-size: 23px;
+        }
+      }
+      .item2 {
+        height: 50%;
+        img {
+          width: 100%;
+          height: 200px;
+        }
+        h2 {
+          font-size: 22px;
+        }
+      }
+      .item3 {
+        height: 50%;
+        img {
+          width: 100%;
+          height: 200px;
+        }
+        h2 {
+          font-size: 23px;
+        }
+      }
+    }
+    p {
+      top: 18%;
+    }
+  }
+}
+@media (max-width: 980px) {
+  .container1 {
+    .description {
+      h1,
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .container2 {
+    .card {
+      .card1 {
+        img {
+          top: 10%;
+          left: 10%;
+        }
+        p {
+          top: 15%;
+          padding: 20px;
+        }
+        height: 350px;
+        form {
+          top: 30%;
+        }
+      }
+      .card2 {
+        img {
+          top: 10%;
+          left: 10%;
+        }
+        p {
+          top: 15%;
+          padding: 20px;
+        }
+        height: 350px;
+        form {
+          top: 30%;
+        }
+      }
+      .card3 {
+        img {
+          top: 10%;
+          left: 10%;
+        }
+        p {
+          top: 15%;
+          padding: 20px;
+        }
+        height: 350px;
+        form {
+          top: 30%;
+        }
+      }
+    }
+  }
+  .container4 {
+    .email-card {
+      width: 85%;
+      left: 70px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .container1 {
+    .description {
+      h1,
+      h2 {
+        font-size: 25px;
+      }
+      .btn {
+        width: 60%;
+        .form1 {
+          .btn1 {
+            font-size: 15px;
+            height: 40px;
+          }
+        }
+        form {
+          .btn2 {
+            font-size: 15px;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .image {
+      img {
+        height: 350px;
+      }
+    }
+  }
+  .container2 {
+    height: 900px;
+    .card {
+      flex-direction: column;
+      .card1 {
+        position: relative;
+        left: 5px;
+        width: 90%;
+        height: 250px;
+        margin-bottom: 10px;
+        img {
+          left: 30px;
+        }
+        p {
+          top: 3%;
+          padding: 30px;
+        }
+        form {
+          top: 10%;
+        }
+      }
+      .card2 {
+        width: 90%;
+        height: 250px;
+        img {
+          left: 30px;
+        }
+        p {
+          top: 3%;
+          padding: 30px;
+        }
+        form {
+          top: 10%;
+        }
+      }
+      .card3 {
+        position: relative;
+        left: -5px;
+        margin-top: 10px;
+        width: 90%;
+        height: 250px;
+        img {
+          left: 30px;
+        }
+        p {
+          top: 3%;
+          padding: 30px;
+        }
+        form {
+          top: 10%;
+        }
+      }
+    }
+  }
+  .container3 {
+    height: 1100px;
+    h1 {
+      top: 4%;
+    }
+    .grid-display {
+      grid-template-columns: repeat(2, 1fr);
+      top: 30%;
+
+      .item1 {
+        height: 85%;
+        width: 80%;
+        img {
+          border: 5px solid black;
+          height: 230px;
+        }
+        h2 {
+          font-size: 25px;
+        }
+      }
+      .item2 {
+        height: 85%;
+        width: 80%;
+        img {
+          border: 5px solid black;
+          height: 230px;
+        }
+        h2 {
+          font-size: 25px;
+        }
+      }
+      .item3 {
+        height: 85%;
+        width: 80%;
+        top: 40%;
+        left: 50%;
+        img {
+          border: 5px solid black;
+          height: 230px;
+        }
+        h2 {
+          font-size: 25px;
+        }
+      }
+    }
+    p {
+      top: 25%;
+    }
+  }
+}
+@media (max-width: 678px) {
+  .container1 {
+    height: 700px;
+    grid-template-columns: repeat(1, 3fr);
+    .description {
+      height: 250px;
+      h1,
+      h2 {
+        font-size: 22px;
+      }
+      position: relative;
+      top: 380px;
+      .btn {
+        width: 40%;
+        position: relative;
+        .form1 {
+          .btn1 {
+            font-size: 15px;
+            height: 40px;
+          }
+        }
+        form {
+          .btn2 {
+            width: 120px;
+          }
+        }
+      }
+    }
+    .image {
+      position: relative;
+      bottom: 250px;
+      height: 300px;
+      img {
+        height: 300px;
+      }
+    }
+  }
+  .scroll-img {
+    display: none;
+  }
+  .container3 {
+    .grid-display {
+      grid-template-columns: repeat(2, 1fr);
+      top: 30%;
+
+      .item1 {
+        height: 70%;
+        width: 80%;
+        img {
+          border: 5px solid black;
+          height: 210px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .item2 {
+        height: 70%;
+        width: 80%;
+        img {
+          border: 5px solid black;
+          height: 210px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .item3 {
+        height: 70%;
+        width: 80%;
+        img {
+          border: 5px solid black;
+          height: 210px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+    p {
+      font-size: 15px;
+      overflow: scroll;
+      top: 25%;
+    }
+  }
+  .container4 {
+    background-position: center;
+    background-size: cover;
+    .email-card {
+      flex-direction: column;
+      position: relative;
+      left: 7%;
+
+      form {
+        width: 100%;
+        h1 {
+          top: 15px;
+          font-size: 29px;
+        }
+        input {
+          width: 90%;
+          top: 5px;
+        }
+        textarea {
+          width: 90%;
+          top: 5px;
+        }
+        button {
+          top: 20px;
+        }
+      }
+      .more-info {
+        display: none;
+      }
+    }
+  }
+  footer{
+    height: 100px;
+    p{
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .container1 {
+    height: 700px;
+    .image {
+      height: 250px;
+      img {
+        height: 250px;
+      }
+    }
+    .description {
+      top: 350px;
+      h1,
+      h2 {
+        position: relative;
+        top: 0%;
+      }
+      .btn {
+        width: 95%;
+        top: -10%;
+
+        .form1 {
+          position: relative;
+          width: 110px;
+          left: 10%;
+        }
+        .form2 {
+          position: relative;
+          left: 10%;
+          .btn2 {
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
+  .container2 {
+    .card {
+      .card1 {
+        p {
+          font-size: 16px;
+          width: 90%;
+          height: 80px;
+          left: 5%;
+          padding: 10px 0px 20px 20px;
+          top: 11%;
+          overflow: scroll;
+        }
+        form {
+          top: 15%;
+        }
+      }
+      .card2 {
+        p {
+          font-size: 16px;
+          width: 90%;
+          height: 90px;
+          left: 5%;
+          padding: 20px 0 20px 20px;
+          top: 11%;
+          overflow: scroll;
+        }
+        form {
+          top: 15%;
+        }
+      }
+      .card3 {
+        p {
+          font-size: 16px;
+          width: 90%;
+          height: 90px;
+          left: 5%;
+          padding: 10px 0 20px 20px;
+          top: 11%;
+          overflow: scroll;
+        }
+        form {
+          top: 15%;
+        }
+      }
+    }
+  }
+  .container3 {
+    height: 1500px;
+    .grid-display {
+      grid-template-columns: repeat(1, 1fr);
+      .item1 {
+        position: relative;
+        height: 90%;
+        width: 70%;
+        left: 10%;
+        img {
+          position: relative;
+          width: 95%;
+          left: 10%;
+          height: 220px;
+        }
+        h2 {
+          font-size: 23px;
+        }
+      }
+      .item2 {
+        position: relative;
+        height: 70%;
+        width: 70%;
+        left: 10%;
+        margin-top: 20%;
+        img {
+          position: relative;
+          width: 95%;
+          left: 10%;
+          height: 220px;
+        }
+        h2 {
+          font-size: 23px;
+        }
+      }
+      .item3 {
+        position: relative;
+        height: 80%;
+        width: 70%;
+        left: 10%;
+        margin-top: 10%;
+        img {
+          position: relative;
+          width: 95%;
+          left: 10%;
+          height: 220px;
+        }
+        h2 {
+          font-size: 23px;
+        }
+      }
+    }
+    p {
+      top: 30%;
+      left: 5%;
+      font-size: 14px;
+      width: 90%;
+    }
+  }
+  .container4 {
+    .email-card {
+      height: 500px;
+      form {
+        h1 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  nav {
+    h2 {
+      top: 15px;
+      font-size: 28px;
+    }
+    label {
+      left: 85%;
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+  .container1{
+    .description{
+      .btn{
+        .form1{
+          .btn1{
+            position: relative;
+            left: -10px;
+          }
+        }
+        .form2{
+          .btn2{
+            position: relative;
+            left: -10px;
+          }
+        }
+      }
+    }
+  }
+  .container2{
+   height: 1100px;
+    .card{
+      .card1 {
+        height: 300px;
+        margin-bottom: 10px;
+        img {
+          left: 30px;
+        }
+        p {
+          top: 11%;
+          height: 130px;
+          padding: 30px 10px 10px 10px;
+        }
+        form {
+          top: 15%;
+        }
+      }
+      .card2 {
+        height: 300px;
+        margin-bottom: 10px;
+        img {
+          left: 30px;
+        }
+        p {
+          top: 11%;
+          height: 130px;
+          padding: 30px 10px 10px 10px;
+        }
+        form {
+          top: 15%;
+        }
+      }
+      .card3 {
+        height: 300px;
+        margin-bottom: 10px;
+        img {
+          left: 30px;
+        }
+        p {
+          top: 11%;
+          height: 130px;
+          padding: 30px 10px 10px 10px;
+        }
+        form {
+          top: 15%;
+        }
+      }
+    }
+  }
+  .container3{
+    height: 1350px;
+    .grid-display {
+      .item1 {
+        height: 80%;
+        img {
+          height: 190px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .item2 {
+        height: 62%;
+        margin-top: 80px;
+        img {
+          height: 190px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .item3 {
+        height: 70%;
+        img {
+          height: 190px;
+        }
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .container4{
+    .email-card{
+      width: 95%;
+      height: 430px;
+      left: 8px;
+      top:15%;
+      form{
+        h1{
+          font-size: 19px;
+          margin-bottom: 10px;
+        }
+        input{
+          height: 40px;
+          border: none;
+          border-radius: 0;
+          border-bottom: 2px solid rgba(244, 244, 244, 0.2);
+        }
+        textarea{
+          margin-top: 10px;
+        }
+        button{
+          height: 50px;
+        }
+      }
+    }
+  }
+}

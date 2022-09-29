@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="https://kit.fontawesome.com/c7b5815651.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio-Shiridhar Khatri</title>
+  </head>
+  <body>
+    <nav>
+      <h2>PORT<span>folio</span></h2>
+      <input type="checkbox" id="checkBox">
+      <label for="checkBox">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#home" class="home-btn">Home</a></li>
+        <!-- <li><a href="">About</a></li> -->
+        <li><a href="#social" class="social-link">Social</a></li>
+        <!-- <li><a href="">Profile</a></li> -->
+        <li><a href="#skills" class="skills-btn">Services</a></li>
+        <li><a href="#contact" class="contact-btn">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Scroll to top btn  -->
+    <section class="scroll-img">
+      <img src="scroll.png" class="scrollTopTop-img" />
+    </section>
+    <!-- END -->
+
+    <!-- Container-1 -->
+    <section class="container1">
+      <div class="description">
+        <h1>I'M Shiridhar Khatri</h1>
+        <h2>I'M a <span class="auto-type"></span></h2>
+        <div class="btn">
+          <form action="" class="form1">
+            <button class="btn1">Hire me!</button>
+          </form>
+          <form action="resume.pdf" class="form2">
+            <button class="btn2">Resume</button>
+          </form>
+        </div>
+      </div>
+      <div class="image">
+        <img src="background.jpg" height="400px" />
+      </div>
+    </section>
+    <!-- END -->
+
+    <!-- Container-2  -->
+    <section class="container2">
+      <div class="card">
+        <div class="card1" data-aos="fade-left">
+          <img src="facebook.png" height="40px" />
+          <p>
+            I'm available in facebook so feel free to contact me through
+            facebook
+          </p>
+          <form action="">
+            <button>Facebook</button>
+          </form>
+        </div>
+        <div class="card2">
+          <img src="github.png" height="40px" />
+          <p>
+            If you have github you can follow me to see my projects in github
+          </p>
+          <form action="">
+            <button>github</button>
+          </form>
+        </div>
+        <div class="card3" data-aos="fade-right">
+          <img src="instagram.png" height="40px" />
+          <p>
+            I'm available in Instagram so feel free to contact me through
+            Instagram
+          </p>
+          <form action="">
+            <button>Instagram</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- END -->
+
+    <!-- Container-3 -->
+    <section class="container3">
+      <h1 data-aos="fade-left">We Offer</h1>
+      <div class="grid-display">
+        <div class="item1" >
+          <img src="webMod.jpg" />
+          <h2>Web Modification</h2>
+        </div>
+        <div class="item2">
+          <img src="webDev.jpg" height="100px" />
+          <h2>Web Development</h2>
+        </div>
+        <div class="item3">
+          <img src="webDes.jpg" height="100px" />
+          <h2>Web Designing</h2>
+        </div>
+      </div>
+      <p data-aos="fade-up">
+        Myself Shiridhar Khatri. I'M from Nepal and currently living in the 2nd
+        largest and also most beautiful city Pokhara. As a profession I'M a
+        student. Studying in a highschool 3rd year as a computer science
+        student. I spend my days learning e-language and new ideas. I like to do
+        coding, I'M focusing more on HTML, CSS, javaScript, Python, php and so
+        on.
+      </p>
+    </section>
+    <!-- END -->
+
+    <!-- container-4  -->
+    <section class="container4">
+      <div class="email-card" data-aos="fade-left">
+        <form onsubmit="sendMessage(); reset(); return false;">
+          <h1>Name</h1>
+          <input type="name" placeholder="Enter Your Full Name" id="name" />
+          <h1>Phone Number</h1>
+          <input
+            type="number"
+            placeholder="Enter Your Phone Number"
+            id="number"
+          />
+          <h1>Email</h1>
+          <input type="name" placeholder="Enter Your Valid Email" id="email" />
+          <h1>Message</h1>
+          <textarea
+            name=""
+            id="message-area"
+            cols="55"
+            rows="4"
+            placeholder="Type your message here"
+          ></textarea
+          ><br />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="more-info">
+          <h1>Reach Me</h1>
+          <h3>Email : khatrishiridhar@gmail.com</h3>
+          <h3>Phone : +9779820610923</h3>
+          <h3>Address : Pokhara-15, Nepal-33700</h3>
+          <img src="cat.png" />
+        </div>
+      </div>
+    </section>
+    <!-- END -->
+
+    <!-- Footer    -->
+    <footer>
+      <p>&copy; 2022 ShiridharKhatri</p>
+    </footer>
+    <!-- END -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
